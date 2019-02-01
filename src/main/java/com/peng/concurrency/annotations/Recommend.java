@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * 用来标记【不推荐】的类或者写法
+ * 用来标记【推荐】的类或者写法
  * @author peng
  */
 @Target(ElementType.TYPE)
