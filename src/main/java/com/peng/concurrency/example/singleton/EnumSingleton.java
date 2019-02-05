@@ -5,6 +5,12 @@ import com.peng.concurrency.annotations.ThreadSafe;
 
 /**
  * 枚举模式：最安全
+ * 
+ * 安全发布对象规则：
+ * 在静态初始化函数中初始化一个对象引用
+ * 将对象的引用保存到一个由锁保护的域中
+ * 将对象的引用保存到某个正确构造对象的final类型域中
+ * 将对象的引用保存到volatile类型域或者AtomicReference对象中
  */
 @ThreadSafe
 @Recommend
