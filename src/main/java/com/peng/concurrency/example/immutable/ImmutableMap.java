@@ -8,7 +8,7 @@ import com.peng.concurrency.annotations.ThreadSafe;
 
 import lombok.extern.slf4j.Slf4j;
 
-//Map内部可修改解决办法
+//利用基本的类库进行不可变Map对象的创建（内部参数也不可以改变）
 @Slf4j
 @ThreadSafe
 public class ImmutableMap {
@@ -18,6 +18,7 @@ public class ImmutableMap {
 		map.put(1, 2);
 		map.put(3, 4);
 		map.put(5, 6);
+		//java
 		map = Collections.unmodifiableMap(map);
 	}
 	

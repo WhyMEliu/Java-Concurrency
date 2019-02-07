@@ -5,7 +5,7 @@ import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableSet;
 import com.peng.concurrency.annotations.ThreadSafe;
 
-//利用Guava的类库进行不可变Map对象的创建
+//利用Guava的类库进行不可变Map对象的创建（内部参数也不可以改变）
 @ThreadSafe
 public class ImmutableGuava {
     private final static ImmutableList<Integer> list = ImmutableList.of(1, 2, 3);
